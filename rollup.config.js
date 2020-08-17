@@ -8,7 +8,7 @@ const production = !process.env.ROLLUP_WATCH;
 
 function serve() {
 	let server;
-	
+
 	function toExit() {
 		if (server) server.kill(0);
 	}
@@ -28,7 +28,7 @@ function serve() {
 }
 
 export default {
-	input: 'src/main.js',
+	input: 'src/index.js',
 	output: {
 		sourcemap: true,
 		format: 'iife',
